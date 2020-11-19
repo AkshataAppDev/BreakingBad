@@ -1,0 +1,67 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.breakingbad"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+8-->/Users/akshatadeshpande/Documents/Coding Challenges/BreakingBad/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="30" />
+9-->/Users/akshatadeshpande/Documents/Coding Challenges/BreakingBad/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/Users/akshatadeshpande/Documents/Coding Challenges/BreakingBad/app/src/main/AndroidManifest.xml:4:5-67
+11-->/Users/akshatadeshpande/Documents/Coding Challenges/BreakingBad/app/src/main/AndroidManifest.xml:4:22-64
+12
+13    <application
+13-->/Users/akshatadeshpande/Documents/Coding Challenges/BreakingBad/app/src/main/AndroidManifest.xml:5:5-20:19
+14        android:name="com.example.breakingbad.base.BaseApplication"
+14-->/Users/akshatadeshpande/Documents/Coding Challenges/BreakingBad/app/src/main/AndroidManifest.xml:6:9-45
+15        android:allowBackup="true"
+15-->/Users/akshatadeshpande/Documents/Coding Challenges/BreakingBad/app/src/main/AndroidManifest.xml:7:9-35
+16        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+16-->[androidx.core:core:1.3.2] /Users/akshatadeshpande/.gradle/caches/transforms-2/files-2.1/7efef102f2c29d6d0d001190f7491c0f/core-1.3.2/AndroidManifest.xml:24:18-86
+17        android:debuggable="true"
+18        android:icon="@mipmap/ic_launcher"
+18-->/Users/akshatadeshpande/Documents/Coding Challenges/BreakingBad/app/src/main/AndroidManifest.xml:8:9-43
+19        android:label="@string/app_name"
+19-->/Users/akshatadeshpande/Documents/Coding Challenges/BreakingBad/app/src/main/AndroidManifest.xml:9:9-41
+20        android:roundIcon="@mipmap/ic_launcher_round"
+20-->/Users/akshatadeshpande/Documents/Coding Challenges/BreakingBad/app/src/main/AndroidManifest.xml:10:9-54
+21        android:supportsRtl="true"
+21-->/Users/akshatadeshpande/Documents/Coding Challenges/BreakingBad/app/src/main/AndroidManifest.xml:11:9-35
+22        android:theme="@style/AppTheme" >
+22-->/Users/akshatadeshpande/Documents/Coding Challenges/BreakingBad/app/src/main/AndroidManifest.xml:12:9-40
+23        <activity android:name="com.example.breakingbad.ui.MainActivity" >
+23-->/Users/akshatadeshpande/Documents/Coding Challenges/BreakingBad/app/src/main/AndroidManifest.xml:13:9-19:20
+23-->/Users/akshatadeshpande/Documents/Coding Challenges/BreakingBad/app/src/main/AndroidManifest.xml:13:19-50
+24            <intent-filter>
+24-->/Users/akshatadeshpande/Documents/Coding Challenges/BreakingBad/app/src/main/AndroidManifest.xml:14:13-18:29
+25                <action android:name="android.intent.action.MAIN" />
+25-->/Users/akshatadeshpande/Documents/Coding Challenges/BreakingBad/app/src/main/AndroidManifest.xml:15:17-69
+25-->/Users/akshatadeshpande/Documents/Coding Challenges/BreakingBad/app/src/main/AndroidManifest.xml:15:25-66
+26
+27                <category android:name="android.intent.category.LAUNCHER" />
+27-->/Users/akshatadeshpande/Documents/Coding Challenges/BreakingBad/app/src/main/AndroidManifest.xml:17:17-77
+27-->/Users/akshatadeshpande/Documents/Coding Challenges/BreakingBad/app/src/main/AndroidManifest.xml:17:27-74
+28            </intent-filter>
+29        </activity>
+30        <activity
+30-->[com.google.android.gms:play-services-base:17.3.0] /Users/akshatadeshpande/.gradle/caches/transforms-2/files-2.1/c0f6b0f42a0330c8502724238c93d30c/jetified-play-services-base-17.3.0/AndroidManifest.xml:23:9-26:75
+31            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+31-->[com.google.android.gms:play-services-base:17.3.0] /Users/akshatadeshpande/.gradle/caches/transforms-2/files-2.1/c0f6b0f42a0330c8502724238c93d30c/jetified-play-services-base-17.3.0/AndroidManifest.xml:24:13-79
+32            android:exported="false"
+32-->[com.google.android.gms:play-services-base:17.3.0] /Users/akshatadeshpande/.gradle/caches/transforms-2/files-2.1/c0f6b0f42a0330c8502724238c93d30c/jetified-play-services-base-17.3.0/AndroidManifest.xml:25:13-37
+33            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+33-->[com.google.android.gms:play-services-base:17.3.0] /Users/akshatadeshpande/.gradle/caches/transforms-2/files-2.1/c0f6b0f42a0330c8502724238c93d30c/jetified-play-services-base-17.3.0/AndroidManifest.xml:26:13-72
+34
+35        <meta-data
+35-->[com.google.android.gms:play-services-basement:17.3.0] /Users/akshatadeshpande/.gradle/caches/transforms-2/files-2.1/c038a5f569acf2d4b1b4a8bfa7b14998/jetified-play-services-basement-17.3.0/AndroidManifest.xml:23:9-25:69
+36            android:name="com.google.android.gms.version"
+36-->[com.google.android.gms:play-services-basement:17.3.0] /Users/akshatadeshpande/.gradle/caches/transforms-2/files-2.1/c038a5f569acf2d4b1b4a8bfa7b14998/jetified-play-services-basement-17.3.0/AndroidManifest.xml:24:13-58
+37            android:value="@integer/google_play_services_version" />
+37-->[com.google.android.gms:play-services-basement:17.3.0] /Users/akshatadeshpande/.gradle/caches/transforms-2/files-2.1/c038a5f569acf2d4b1b4a8bfa7b14998/jetified-play-services-basement-17.3.0/AndroidManifest.xml:25:13-66
+38    </application>
+39
+40</manifest>

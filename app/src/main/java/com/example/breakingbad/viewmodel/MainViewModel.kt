@@ -41,7 +41,7 @@ class MainViewModel @Inject constructor(private val apiService: BreakingBadApi) 
         getBreakingBadCharacters()
     }
 
-    private fun getBreakingBadCharacters() {
+    fun getBreakingBadCharacters() {
         viewModelScope.launch {
             try {
                 _status.value = APIStatus.LOADING
@@ -64,41 +64,30 @@ class MainViewModel @Inject constructor(private val apiService: BreakingBadApi) 
     }
 
     fun filterByNames(name: String) {
-        viewModelScope.launch {
-            val results = withContext(Dispatchers.IO)
-            {
-                charItems.value?.filter { character ->
-                    character.name.contains(name, true)
-                }
-
-            }
-
-            if (!results.isNullOrEmpty()) {
-                _charFiltered.postValue(results)
-            }
-            else
-            {
-                _charFiltered.postValue(ArrayList())
-            }
+        val results = charItems.value?.filter { character ->
+            character.name.contains(name, true)
+        }
+        if (!results.isNullOrEmpty()) {
+            _charFiltered.postValue(results)
+        }
+        else
+        {
+            _charFiltered.postValue(ArrayList())
         }
     }
-
     fun onSeasonFilterClicked(season: Int) {
         if (season == 0) {
             _charFiltered.postValue(charItems.value)
         } else {
-            viewModelScope.launch {
-                val results = withContext(Dispatchers.IO) { filterBySeason(season) }
-                if (results.isNotEmpty()) {
-                    _charFiltered.postValue(results)
-                }
-                else {
-                    _charFiltered.postValue(ArrayList())
-                }
+            val results = filterBySeason(season)
+            if (results.isNotEmpty()) {
+                _charFiltered.postValue(results)
+            }
+            else {
+                _charFiltered.postValue(ArrayList())
             }
         }
     }
-
     private fun filterBySeason(season: Int): List<CharacterModel> {
         val filtered: MutableList<CharacterModel> = mutableListOf()
         for (charc in charItems.value!!) {

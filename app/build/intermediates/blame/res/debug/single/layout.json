@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/akshatadeshpande/Documents/Coding Challenges/BreakingBad/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_character.xml",
+        "source": "/Users/akshatadeshpande/Documents/Coding Challenges/BreakingBad/app/src/main/res/layout/item_character.xml"
+    },
+    {
+        "merged": "/Users/akshatadeshpande/Documents/Coding Challenges/BreakingBad/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/char_detail.xml",
+        "source": "/Users/akshatadeshpande/Documents/Coding Challenges/BreakingBad/app/src/main/res/layout/char_detail.xml"
+    },
+    {
+        "merged": "/Users/akshatadeshpande/Documents/Coding Challenges/BreakingBad/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/char_list.xml",
+        "source": "/Users/akshatadeshpande/Documents/Coding Challenges/BreakingBad/app/src/main/res/layout/char_list.xml"
+    }
+]

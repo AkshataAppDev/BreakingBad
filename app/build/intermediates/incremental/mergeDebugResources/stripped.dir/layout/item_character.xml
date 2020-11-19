@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    
+                 
+                           
+                                                                     
+
+                 
+                                
+                                                                       
+           
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:tag="layout/item_character_0"                       xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <ImageView
+            android:id="@+id/characterImage"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:scaleType="center"
+            android:tag="binding_1"         
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/characterName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:tag="binding_2"        
+            tools:text="Character Name" />
+
+    </LinearLayout>
+         
